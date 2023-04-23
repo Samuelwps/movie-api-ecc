@@ -7,12 +7,12 @@ const movies = require("./src/movies/movies.json")
 
 
 app.get("/genres", (req, res) => {
-    res.setHeader("Access-Control-Allow-Origin", "https://01-movie.netlify.app")
+    res.setHeader("Access-Control-Allow-Origin", "*")
     return res.json(genres.genres)
 })
 
 app.get("/movies", (req, res) => {
-    res.setHeader("Access-Control-Allow-Origin", "https://01-movie.netlify.app")
+    res.setHeader("Access-Control-Allow-Origin", "*")
     return res.json(movies.movies)
 })
 
